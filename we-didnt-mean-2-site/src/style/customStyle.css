@@ -1,0 +1,44 @@
+/* Banner.css */
+.banner-container {
+    display: flex;
+    align-items: center;
+}
+
+.banner-image {
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.specialFont {
+    font-family: 'Knights_Quest', sans-serif; /* Replace 'YourSpecialFont' with your actual font name */
+}
+
+/* customStyle.css */
+
+.text-container {
+    background-color: #5c2d0c; /* SaddleBrown - adjust as needed */
+    border-radius: 10px; /* Border radius for rounded corners */
+    padding: 20px; /* Adjust padding as needed */
+    position: relative;
+}
+    /* Metallic gold border with a pencil-like style */
+.text-container::before {
+      content: '';
+      position: absolute;
+      top: -5px; /* Adjust to position the outline inside the container */
+      left: -5px; /* Adjust to position the outline inside the container */
+      right: -5px; /* Adjust to position the outline inside the container */
+      bottom: -5px; /* Adjust to position the outline inside the container */
+      border: 3px solid #ffd700; /* Gold - adjust as needed */
+      border-radius: 12px; /* Adjust to match container's border radius */
+    /* Drop shadow for a downward-seated appearance */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); /* Adjust as needed */
+  }
+  
+  /* Additional styling for the text, adjust as needed */
+  .text-container p {
+    font-size: 18px;
+    color: #333;
+    /* Add more styles as needed */
+  }
+  

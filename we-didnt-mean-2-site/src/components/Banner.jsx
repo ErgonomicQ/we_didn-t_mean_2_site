@@ -1,9 +1,14 @@
 import React from 'react';
+import bannerImage from '..style/images/WDM2_LOGO_POCKET.png';
 
 const Banner = () => {
     return (
-        <header>
-            <img src="banner-image.jpg" alt="Banner Image" />
+        <header className='banner-container'>
+            <img src={bannerImage} alt="Banner Image" />
+
+            <div className='specialFont text-container'>
+                <p>We Didn't Mean 2</p>
+            </div>
         </header>
     );
 };
