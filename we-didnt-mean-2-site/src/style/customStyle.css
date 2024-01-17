@@ -76,6 +76,56 @@
     background-color: #27ae60;
   }
   
+/* Navigation Box */
+.navigation-container {
+  display: flex;
+}
+
+.navigation-box {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+.navigation-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation-box li {
+  margin-bottom: 10px;
+}
+
+.navigation-box button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navigation-box button.active {
+  font-weight: bold;
+  color: #333; /* Active item color */
+}
+
+/* Scrollable Sections */
+.scrollable-sections {
+  margin-left: 150px; /* Adjust as needed */
+}
+
+.scroll-section {
+  padding: 20px;
+  margin: 50px 0;
+  border: 1px solid #ccc;
+}
+
+/* Additional styling for section content */
+.scroll-section h2 {
+  color: #333; /* Section title color */
+}
+
+
   @media (max-width: 900px) {
     .component {
       width: 50%;
