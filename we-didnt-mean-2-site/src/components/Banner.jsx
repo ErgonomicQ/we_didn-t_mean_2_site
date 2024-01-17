@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerImage from '..style/images/WDM2_LOGO_POCKET.png';
+import bannerImage from '../style/images/WDM2_LOGO_POCKET.png';
 
 const Banner = () => {
     return (

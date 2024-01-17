@@ -19,7 +19,7 @@ const [isPlaying, setIsPlaying] = useState(false);
 
   const [seconds, setSeconds] = useState();
 
-  const [play, { pause, duration, sound }] = useSound(qala);
+  const [play, { pause, duration, sound }] = useSound(); //remember to add sound argument later once actual music array is built.
 
   useEffect(() => {
     if (duration) {
