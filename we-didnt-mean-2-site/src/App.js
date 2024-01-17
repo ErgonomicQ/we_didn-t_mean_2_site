@@ -29,26 +29,28 @@
 import React from 'react';
 import Navigation from './components/Navigation';
 import MissionStatement from './components/MissionStatement';
-import Projects from './components/ProjectCarosel'; // Replace with your actual Projects component
-import RSSNews from './components/RSSNews'; // Replace with your actual RSSNews component
-import Player from './components/MusicPlayer'; // Replace with your actual MusicPlayer component
+import ProjectList from './components/ProjectCarosel'; 
+import RSSNews from './components/RSSNews'; 
+import Player from './components/MusicPlayer'; 
 import Footer from './components/Footer';
 import DevTeam from './components/DevTeam';
+import Banner from './components/Banner';
 
 const App = () => {
   const sections = [
     { id: 'aboutUs', label: 'About Us', component: <DevTeam /> },
-    { id: 'projects', label: 'Projects', component: <ProjectCarosel /> },
+    { id: 'projects', label: 'Projects', component: <ProjectList /> },
     { id: 'rssNews', label: 'RSS News', component: <RSSNews /> },
     { id: 'musicPlayer', label: 'Music Player', component: <Player /> },
   ];
 
   return (
     <div>
+      <Banner />
       <Navigation sections={sections} />
       <DevTeam />
       <MissionStatement />
-      <Projects />
+      <ProjectList />
       <RSSNews />
       <Player />
       <Footer />
