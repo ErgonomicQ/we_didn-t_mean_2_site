@@ -4,22 +4,24 @@ import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai"; // icons f
 import { BiSkipNext, BiSkipPrevious } from "react-icons/bi"; // icons for next and previous track
 import { IconContext } from "react-icons"; // for customizing the icons
 
+
+export default function Player(){
+
 const [isPlaying, setIsPlaying] = useState(false);
-const [time, setTime] = useState({
-    min: "", 
-    sec: "",
-});
-
-const [currTime, setCurrTime] = useState({
+  const [time, setTime] = useState({
     min: "",
-    sec: "",
-});
+    sec: ""
+  });
+  const [currTime, setCurrTime] = useState({
+    min: "",
+    sec: ""
+  });
 
-const [seconds, setSeconds] = useState();
+  const [seconds, setSeconds] = useState();
 
-const [play, { pause, duration, sound }] = useSound();
+  const [play, { pause, duration, sound }] = useSound(qala);
 
-useEffect(() => {
+  useEffect(() => {
     if (duration) {
       const sec = duration / 1000;
       const min = Math.floor(sec / 60);
@@ -57,12 +59,12 @@ useEffect(() => {
   };
 
   return (
-    <div className="text-component">
+    <div className="component">
       <h2>Playing Now</h2>
       <img className="musicCover" src="https://picsum.photos/200/200" />
       <div>
-        <h3 className="title">Rubaiyyan</h3>
-        <p className="subTitle">Qala</p>
+        <h3 className="title">Song Name</h3>
+        <p className="subTitle">Artist</p>
       </div>
       <div>
         <div className="time">
@@ -112,3 +114,4 @@ useEffect(() => {
       </div>
     </div>
   );
+        }
