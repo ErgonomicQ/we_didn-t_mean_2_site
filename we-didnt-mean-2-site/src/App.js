@@ -37,17 +37,12 @@ import DevTeam from './components/DevTeam';
 import Banner from './components/Banner';
 
 const App = () => {
-  const sections = [
-    { id: 'aboutUs', label: 'About Us', component: <DevTeam /> },
-    { id: 'projects', label: 'Projects', component: <ProjectList /> },
-    { id: 'rssNews', label: 'RSS News', component: <RSSNews /> },
-    { id: 'musicPlayer', label: 'Music Player', component: <Player /> },
-  ];
+  
 
   return (
     <div>
       <Banner />
-      <Navigation sections={sections} />
+      <Navigation />
       <DevTeam />
       <MissionStatement />
       <ProjectList />
